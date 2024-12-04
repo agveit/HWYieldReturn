@@ -1,0 +1,15 @@
+﻿<Window x:Class="YieldReturn.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:YieldReturn"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="600">
+    <Grid>
+        <TextBox x:Name="StartTextBox" GotFocus="StartTextBoxGotFocus" HorizontalAlignment="Left" Height="28" Margin="60,318,0,0" TextWrapping="Wrap" Text="Начальное значение" VerticalAlignment="Top" Width="174"/>
+        <TextBox x:Name="EndTextBox" GotFocus="EndTextBoxGotFocus" HorizontalAlignment="Left" Height="27" Margin="60,361,0,0" TextWrapping="Wrap" Text="Конечное значение" VerticalAlignment="Top" Width="174"/>
+        <Button x:Name="GenerateButton" Click="GenerateButton_Click" Content="Сгенерировать" HorizontalAlignment="Left" Margin="352,318,0,0" VerticalAlignment="Top" Width="186" Height="70"/>
+        <ListBox x:Name="NumberListBox" HorizontalAlignment="Center" Height="254" Margin="0,10,0,0" VerticalAlignment="Top" Width="500"/>
+    </Grid>
+</Window>
